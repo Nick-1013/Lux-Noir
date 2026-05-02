@@ -1,329 +1,294 @@
-using UnityEngine; // Gives access to Unity engine core features (physics, transforms, etc.)
-using UnityEngine.InputSystem; // Enables use of the new Unity Input System
-using System.Linq; // Allows use of LINQ (used here to find gamepad devices)
-using UnityEngine.SceneManagement;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using System.Linq;
 
-public class PlayerMovement : MonoBehaviour // Main player controller class
+public class PlayerMovement : MonoBehaviour
 {
-    // ---------------- GAME MANAGER ----------------
-    private GameManagerScript gameManager; // Reference to GameManager for pause/game over logic
+    private GameManagerScript gameManager;
 
-    // ---------------- MOVEMENT SETTINGS ----------------
-    public float speed = 5.0f; // Base movement speed of the player
-    public float runMultiplier = 1.75f; // Multiplier applied when running
-    public float jumpForce = 10.0f; // Force applied when jumping
-    public int maxJumps = 2; // Maximum number of jumps allowed (double jump)
-    public float groundPoundForce = 25f; // Downward force for ground pound
+    [Header("Movement")]
+    public float speed = 5.0f;
+    public float runMultiplier = 1.75f;
+    public float jumpForce = 10.0f;
 
-    // ---------------- MOVEMENT STATE ----------------
-    private float moveDirection; // Stores horizontal input (-1 to 1)
-    private Rigidbody2D rb; // Reference to Rigidbody2D for physics movement
-    private Animator animator; // Reference to Animator for animations
-    private bool isGrounded; // Tracks if player is touching the ground
-    private int availableJumps; // Tracks how many jumps remain
-    private bool isGroundPounding; // Tracks if player is currently ground pounding
+    [Header("Variable Jump")]
+    public float jumpCutMultiplier = 0.5f;
 
-    // ---------------- MOVEMENT AUDIO ----------------
-    [Header("Movement Audio")]
-    public AudioClip moveClip; // looping movement sound
-    [Range(0f, 1f)]
-    public float moveVolume = 1f;
-    public bool spatialMove = false;
+    private float moveDirection;
+    private Rigidbody2D rb;
 
-    private AudioSource moveAudioSource;
+    private bool isGrounded;
+    private int availableJumps;
 
-    // ---------------- ATTACK SETTINGS ----------------
-    [Header("Attack")] // Creates a header in the Unity Inspector
-    public float attackRange = 2.5f; // Radius of attack hit detection
-    public int attackDamage = 1; // Damage dealt per attack
-    public Transform attackPoint;
+    // ---------------- WALL SYSTEM ----------------
+    [Header("Wall")]
+    public Transform wallCheck;
+    public float wallCheckDistance = 0.5f;
+    public LayerMask wallLayer;
 
-    public LayerMask enemyLayer; // Layer mask to specify which layers are considered enemies for attack detection
+    private bool isTouchingWall;
+    private bool isWallSliding;
+    private bool isWallJumping;
+    private float wallJumpingDirection;
+    private float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+    private float wallJumpingDuration = 0.4f;
 
-    // ---------------- ATTACK AUDIO ----------------
-    [Header("Attack Audio")]
-    public AudioClip attackClip; // clip to play on attack keyframe (assign in Inspector)
-    public bool spatialAttack = false; // true -> play at player position, false -> play at camera (2D)
+    [Header("Wall Jump")]
+    public Vector2 wallJumpForce = new Vector2(8f, 12f);
 
-    // ---------------- HURT AUDIO ----------------
-    [Header("Hurt Audio")]
-    public AudioClip hurtClip; // clip to play when player is hurt
-    public bool spatialHurt = false; // true -> play at player position, false -> play at camera
+    // ---------------- COLOR SWAP ----------------
+    [Header("Color Swap")]
+    public SpriteRenderer spriteRenderer;
+    public Sprite normalSprite;
+    public Sprite altSprite;
 
-    // ---------------- PICKUP SYSTEM ----------------
-    [Header("Pickups")]
-    public CoinManager coinManager;        // Tracks total coins collected
-    public AudioManager audioManager;      // Handles audio playback
-    public GameObject pickupCollectVFX;    // Visual effect when picking up items
+    private bool isAltColor = false;
 
-    // ---------------- UNITY START ----------------
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Get Rigidbody2D component
-        animator = GetComponent<Animator>(); // Get Animator component
-        availableJumps = maxJumps; // Initialize jump count
-
-        gameManager = FindFirstObjectByType<GameManagerScript>(); // Find GameManager in scene
-
-        // Setup movement audio
-        if (moveClip != null)
-        {
-            moveAudioSource = GetComponent<AudioSource>();
-            if (moveAudioSource == null)
-            {
-                moveAudioSource = gameObject.AddComponent<AudioSource>();
-                moveAudioSource.playOnAwake = false;
-            }
-
-            moveAudioSource.clip = moveClip;
-            moveAudioSource.loop = true;
-            moveAudioSource.volume = moveVolume;
-            moveAudioSource.spatialBlend = spatialMove ? 1f : 0f;
-        }
+        rb = GetComponent<Rigidbody2D>();
+        availableJumps = 1;
+        gameManager = FindFirstObjectByType<GameManagerScript>();
     }
 
-    // ---------------- MAIN UPDATE LOOP ----------------
     void Update()
     {
-        if (Time.timeScale == 0f) return; // Stop input when game is paused
+        if (Time.timeScale == 0f) return;
 
-        if (Time.timeScale == 0f)
+        if (transform.position.y < -10f)
         {
-            UpdateMoveAudio(false);
-            return;
+            gameManager.GameOver();
+            enabled = false;
         }
 
-        // Get current connected gamepad (if any)
         Gamepad currentGamepad = InputSystem.devices.OfType<Gamepad>().FirstOrDefault();
 
-        // Get horizontal movement input (keyboard or gamepad)
         moveDirection = GetHorizontalInput(currentGamepad);
 
-        // Apply deadzone to prevent small unwanted movement
         if (Mathf.Abs(moveDirection) < 0.1f) moveDirection = 0f;
 
-        float currentSpeed = speed; // Start with base speed
+        float currentSpeed = speed;
 
-        // Apply run multiplier if run input is held
         if (IsRunHeld(currentGamepad))
-        {
             currentSpeed *= runMultiplier;
+
+        // ---------------- WALL CHECK ----------------
+        CheckWall();
+
+        // -------- PREVENT CONTROL DURING WALL JUMP --------
+        if (!isWallJumping)
+        {
+            float horizontalVelocity = moveDirection * currentSpeed;
+
+            // PREVENT PUSHING INTO WALL
+            if (isTouchingWall && !isGrounded)
+            {
+                if (Mathf.Sign(moveDirection) == transform.localScale.x)
+                {
+                    horizontalVelocity = 0f;
+                }
+            }
+
+            rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
         }
 
-        // Only allow movement if NOT ground pounding
-        if (!isGroundPounding)
+        // Flip player (only if not wall jumping)
+        if (!isWallJumping)
         {
-            // Apply horizontal velocity while keeping vertical velocity unchanged
-            rb.linearVelocity = new Vector2(moveDirection * currentSpeed, rb.linearVelocity.y);
-
-            // Flip character based on movement direction
             if (moveDirection > 0)
                 transform.localScale = new Vector3(1, 1, 1);
             else if (moveDirection < 0)
                 transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        // Update animation states
-        UpdateAnimations();
+        // ---------------- WALL ----------------
+        HandleWallSlide();
+        HandleWallJump(currentGamepad);
 
-        // Update movement audio based on whether player is moving and not ground pounding
+        // ---------------- NORMAL JUMP ----------------
+        if (IsJumpPressed(currentGamepad) && isGrounded && availableJumps > 0)
         {
-            if (animator == null) return;
-
-            float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
-            bool isMoving = horizontalSpeed > 0.1f && !isGroundPounding;
-
-            animator.SetBool("IsMoving", isMoving);
-
-            UpdateMoveAudio(isMoving);
+            Jump();
         }
 
-        // -------- HURT AUDIO WATCHER --------
-        // Play hurt sound on rising edge of Animator "IsHurt" bool, if the parameter exists.
-        if (animator != null && AnimatorHasParameter("IsHurt"))
+        // VARIABLE JUMP RELEASE
+        if (IsJumpReleased(currentGamepad))
         {
-            bool animHurt = animator.GetBool("IsHurt");
-            // track previous state using a static local field emulated with PlayerPrefs? No — use a private field.
-            // (prevAnimHurt declared below)
-            if (animHurt && !prevAnimHurt)
-            {
-                PlayHurtSoundEvent();
-            }
-            prevAnimHurt = animHurt;
+            CutJump();
         }
 
-        // -------- GROUND POUND CHECK --------
-        // Only allow ground pound while in air and not already doing it
-        if (!isGrounded && !isGroundPounding && IsGroundPoundPressed(currentGamepad))
+        // ---------------- COLOR SWAP ----------------
+        if (IsColorSwapPressed(currentGamepad))
         {
-            GroundPound(); // Execute ground pound
-            return; // Skip rest of update this frame
-        }
-
-        // -------- JUMP CHECK --------
-        // Only jump if player has jumps remaining
-        if (IsJumpPressed(currentGamepad) && availableJumps > 0)
-        {
-            Jump(); // Perform jump
-        }
-
-        // -------- ATTACK INPUT --------
-        // Check for mouse click (left click)
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            AttackAnimation(); // Trigger attack
-        }
-
-
-        // -------- DEBUG: RELOAD SCENE --------
-        if (Keyboard.current.nKey.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-        else if (Keyboard.current.bKey.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        }
-        else if (Keyboard.current.rKey.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            ToggleColor();
         }
     }
 
-    // ---------------- ANIMATION HANDLER ----------------
-    void UpdateAnimations()
+    // =========================================================
+    // JUMP
+    // =========================================================
+    private void Jump()
     {
-        if (animator == null) return; // Safety check
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-        float horizontalSpeed = Mathf.Abs(rb.linearVelocity.x); // Get horizontal movement speed
-
-        bool isMoving = horizontalSpeed > 0.1f; // True if moving horizontally
-
-        // Apply animation parameters
-        animator.SetBool("IsMoving", isMoving);
+        availableJumps--;
     }
 
-    // ---------------- MOVEMENT AUDIO HANDLER ----------------
-    void UpdateMoveAudio(bool isMoving)
+    private void CutJump()
     {
-        if (moveAudioSource == null) return; // No audio source to play sound
-        if (isMoving && !moveAudioSource.isPlaying)
+        if (rb.linearVelocity.y > 0)
         {
-            moveAudioSource.Play(); // Start movement sound
+            rb.linearVelocity = new Vector2(
+                rb.linearVelocity.x,
+                rb.linearVelocity.y * jumpCutMultiplier
+            );
         }
+    }
 
-        // Smooth volume transition
-        float targetVolume = isMoving ? moveVolume : 0f;
-
-        moveAudioSource.volume = Mathf.Lerp(
-            moveAudioSource.volume,
-            targetVolume,
-            Time.deltaTime * 10f
+    // =========================================================
+    // WALL LOGIC
+    // =========================================================
+    void CheckWall()
+    {
+        isTouchingWall = Physics2D.Raycast(
+            transform.position,
+            Vector2.right * transform.localScale.x,
+            wallCheckDistance,
+            wallLayer
         );
-        if (!isMoving && moveAudioSource.isPlaying)
+
+        Debug.DrawRay(transform.position, Vector2.right * transform.localScale.x * wallCheckDistance, Color.red);
+    }
+
+    void HandleWallSlide()
+    {
+        // Require input to slide (prevents sticky idle cling)
+        isWallSliding = isTouchingWall && !isGrounded && rb.linearVelocity.y < 0 && moveDirection != 0;
+
+        if (isWallSliding)
         {
-            moveAudioSource.Stop(); // Stop movement sound
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
         }
     }
 
-    // ---------------- INPUT HANDLING ----------------
+    void HandleWallJump(Gamepad currentGamepad)
+    {
+        if (isWallSliding)
+        {
+            isWallJumping = false;
+            wallJumpingDirection = -transform.localScale.x;
+            wallJumpingCounter = wallJumpingTime;
+
+            CancelInvoke(nameof(StopWallJumping));
+        }
+        else
+        {
+            wallJumpingCounter -= Time.deltaTime;
+        }
+
+        if (IsJumpPressed(currentGamepad) && wallJumpingCounter > 0f)
+        {
+            isWallJumping = true;
+
+            rb.linearVelocity = new Vector2(
+                wallJumpingDirection * wallJumpForce.x,
+                wallJumpForce.y
+            );
+
+            wallJumpingCounter = 0f;
+
+            // EXTRA PUSH OFF WALL (anti-stick)
+            rb.AddForce(new Vector2(wallJumpingDirection * 2f, 0f), ForceMode2D.Impulse);
+
+            // Flip player
+            if (transform.localScale.x != wallJumpingDirection)
+            {
+                Vector3 scale = transform.localScale;
+                scale.x *= -1f;
+                transform.localScale = scale;
+            }
+
+            Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+    }
+
+    void StopWallJumping()
+    {
+        isWallJumping = false;
+    }
+
+    // =========================================================
+    // COLOR SWAP
+    // =========================================================
+    void ToggleColor()
+    {
+        isAltColor = !isAltColor;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.sprite = isAltColor ? altSprite : normalSprite;
+        }
+    }
+
+    // =========================================================
+    // INPUT
+    // =========================================================
     private float GetHorizontalInput(Gamepad currentGamepad)
     {
-        float gamepadInput = 0f; // Store gamepad input
-        float keyboardInput = 0f; // Store keyboard input
+        float gamepadInput = 0f;
+        float keyboardInput = 0f;
 
-        // -------- GAMEPAD INPUT --------
         if (currentGamepad != null)
-        {
-            gamepadInput = currentGamepad.leftStick.x.ReadValue(); // Read left stick horizontal value
-        }
+            gamepadInput = currentGamepad.leftStick.x.ReadValue();
 
-        // -------- KEYBOARD INPUT --------
         if (Keyboard.current != null)
         {
             if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
-                keyboardInput -= 1f; // Move left
+                keyboardInput -= 1f;
 
             if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
-                keyboardInput += 1f; // Move right
+                keyboardInput += 1f;
         }
 
-        // Prefer gamepad input if it's being used
-        if (Mathf.Abs(gamepadInput) > 0.1f)
-            return gamepadInput;
-
-        return keyboardInput; // Otherwise use keyboard
+        return Mathf.Abs(gamepadInput) > 0.1f ? gamepadInput : keyboardInput;
     }
 
-    // ---------------- JUMP LOGIC ----------------
-    private void Jump()
-    {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Reset vertical velocity
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); // Apply upward force
-
-        isGrounded = false; // Immediately mark as airborne
-        availableJumps--; // Reduce available jumps
-    }
-
-    // ---------------- GROUND POUND ----------------
-    private void GroundPound()
-    {
-        isGroundPounding = true; // Mark as ground pounding
-
-        rb.linearVelocity = Vector2.zero; // Stop all current motion
-        rb.AddForce(Vector2.down * groundPoundForce, ForceMode2D.Impulse); // Slam downward
-    }
-
-    // ---------------- INPUT CHECKS ----------------
     private bool IsJumpPressed(Gamepad currentGamepad)
     {
-        bool gamepadJump = currentGamepad != null && currentGamepad.aButton.wasPressedThisFrame; // Gamepad A button
-        bool keyboardJump = Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame; // Space key
-
-        return gamepadJump || keyboardJump; // Return true if either pressed
+        return (currentGamepad != null && currentGamepad.aButton.wasPressedThisFrame) ||
+               (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame);
     }
 
-    private bool IsGroundPoundPressed(Gamepad currentGamepad)
+    private bool IsJumpReleased(Gamepad currentGamepad)
     {
-        bool gamepadPound =
-            currentGamepad != null &&
-            currentGamepad.leftStick.y.ReadValue() < -0.5f && // Stick pushed down
-            currentGamepad.aButton.wasPressedThisFrame; // Jump pressed
+        return (currentGamepad != null && currentGamepad.aButton.wasReleasedThisFrame) ||
+               (Keyboard.current != null && Keyboard.current.spaceKey.wasReleasedThisFrame);
+    }
 
-        bool keyboardPound =
-            Keyboard.current != null &&
-            (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed) && // Down input
-            Keyboard.current.spaceKey.wasPressedThisFrame; // Jump pressed
-
-        return gamepadPound || keyboardPound; // Return true if either triggered
+    private bool IsColorSwapPressed(Gamepad currentGamepad)
+    {
+        return (currentGamepad != null && currentGamepad.xButton.wasPressedThisFrame) ||
+               (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame);
     }
 
     private bool IsRunHeld(Gamepad currentGamepad)
     {
-        bool gamepadRun =
-            currentGamepad != null &&
-            (currentGamepad.leftStickButton.isPressed || currentGamepad.rightTrigger.ReadValue() > 0.1f); // Run input
-
-        bool keyboardRun =
-            Keyboard.current != null &&
-            Keyboard.current.leftShiftKey.isPressed; // Shift key
-
-        return gamepadRun || keyboardRun; // Return true if either held
+        return (currentGamepad != null &&
+               (currentGamepad.leftStickButton.isPressed || currentGamepad.rightTrigger.ReadValue() > 0.1f)) ||
+               (Keyboard.current != null && Keyboard.current.leftShiftKey.isPressed);
     }
 
-    // ---------------- COLLISION HANDLING ----------------
+    // =========================================================
+    // GROUND COLLISION
+    // =========================================================
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) // Check if collided with ground
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            if (isGroundPounding)
-            {
-                rb.AddForce(Vector2.up * 2f, ForceMode2D.Impulse); // Small bounce after ground pound
-            }
-
-            availableJumps = maxJumps; // Reset jumps
-            isGrounded = true; // Mark as grounded
-            isGroundPounding = false; // Reset ground pound state
+            availableJumps = 1;
+            isGrounded = true;
         }
     }
 
@@ -331,184 +296,7 @@ public class PlayerMovement : MonoBehaviour // Main player controller class
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false; // Mark as airborne
+            isGrounded = false;
         }
     }
-
-    // ---------------- PICKUP HANDLING ----------------
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("CoinCollection"))
-        {
-            // -------- PLAY SOUND --------
-            if (audioManager != null && audioManager.audioClip != null)
-            {
-                // Play at camera position so it's always audible like UI sound
-                Vector3 playPos = Camera.main != null ? Camera.main.transform.position : transform.position;
-                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPos);
-            }
-            else if (audioManager != null)
-            {
-                audioManager.PlayAudio(); // fallback
-            }
-
-            // -------- SPAWN VFX --------
-            if (pickupCollectVFX != null)
-            {
-                Instantiate(pickupCollectVFX, other.transform.position, Quaternion.identity);
-            }
-
-            // -------- DESTROY COIN --------
-            Destroy(other.gameObject);
-
-            // -------- ADD TO COIN COUNT --------
-            if (coinManager != null)
-            {
-                coinManager.coinCount++;
-            }
-        }
-    }
-
-    // ---------------- ATTACK SYSTEM ----------------
-    void Attack() // FIXED: removed unnecessary parameter
-    {
-        Debug.Log("[Player] ATTACK!"); // Debug log for attack trigger
-
-        // Detect all colliders within attack range
-        Vector2 attackCenter = attackPoint.position;
-
-        // Draw this always
-        Debug.DrawLine(transform.position, attackCenter, Color.red, 1f);
-        Debug.DrawRay(attackCenter, Vector2.up * attackRange, Color.green, 1f);
-
-        Collider2D[] hits = Physics2D.OverlapCircleAll(attackCenter, attackRange, enemyLayer);
-        Debug.Log("Hits found: " + hits.Length);
-        Debug.Log("Enemy LayerMask value: " + enemyLayer.value);
-
-        // Loop through all detected colliders
-        foreach (Collider2D col in hits)
-        {
-            Debug.Log("Hit object: " + col.name);
-
-            hits[0].GetComponent<Health>().TakeDamage(attackDamage);
-
-
-            /*
-            // Only apply damage if enemy was found
-            if (health != null && !health.isPlayer)
-            {
-                Debug.Log("Applying damage to: " + health.gameObject.name);
-                health.TakeDamage(attackDamage);
-            }
-            */
-        }
-    }
-    void AttackAnimation()
-    {
-        if (animator != null)
-            animator.SetTrigger("Attack"); // Trigger attack animation
-    }
-
-    // Public method for Animation Event — call this from the attack animation keyframe
-    public void PlayAttackSoundEvent()
-    {
-        Vector3 playPos = spatialAttack ? transform.position : (Camera.main != null ? Camera.main.transform.position : transform.position);
-
-        if (attackClip != null)
-        {
-            AudioSource.PlayClipAtPoint(attackClip, playPos);
-            return;
-        }
-
-        if (audioManager != null)
-        {
-            if (audioManager.audioClip != null)
-            {
-                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPos);
-            }
-            else
-            {
-                audioManager.PlayAudio();
-            }
-        }
-    }
-
-    public void PlayHurtSoundEvent()
-    {
-        Vector3 playPos = spatialHurt ? transform.position : (Camera.main != null ? Camera.main.transform.position : transform.position);
-
-        if (hurtClip != null)
-        {
-            AudioSource.PlayClipAtPoint(hurtClip, playPos);
-            return;
-        }
-
-        if (audioManager != null)
-        {
-            if (audioManager.audioClip != null)
-            {
-                AudioSource.PlayClipAtPoint(audioManager.audioClip, playPos);
-            }
-            else
-            {
-                audioManager.PlayAudio();
-            }
-        }
-    }
-
-    void OnDisable()
-    {
-        UpdateMoveAudio(false);
-    }
-
-    // ---------------- PRIVATE HELPERS ----------------
-    // Helper: check whether the attached Animator contains a parameter name
-    private bool AnimatorHasParameter(string paramName)
-    {
-        if (animator == null || string.IsNullOrEmpty(paramName)) return false;
-        foreach (var p in animator.parameters)
-        {
-            if (p.name == paramName) return true;
-        }
-        return false;
-    }
-    // previous animator hurt state
-    private bool prevAnimHurt = false;
 }
-
-
-// ***************  THIS IS THE END OF THE CODE  ************************
-
-
-// ***************  KEY TERMS  ************************
-//  variable
-//  inspector
-//  declaring
-//  initializing
-//  public
-//  private
-//  debug.log
-//  string
-//  float
-//  integer (aka 'int')
-//  GameObject
-//  Input
-//  KeyCode
-//  string
-//  Rigidbody2D
-//  Vector2
-//  Vector3
-//  ||
-//  &&
-//  ++
-//  *
-//  ==
-//  =
-// !=
-
-
-
-
-
-
-// ***************  IGNORE EVERYTHING BELOW THIS LINE!  ************************
