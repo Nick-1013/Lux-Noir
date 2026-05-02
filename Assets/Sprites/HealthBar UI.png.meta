@@ -1,0 +1,3458 @@
+fileFormatVersion: 2
+guid: 5ba4be3800fa5dd4891c80f7dc3b8749
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8439337362985100520
+    second: HealthBar UI_0
+  - first:
+      213: -3935947780830730445
+    second: HealthBar UI_1
+  - first:
+      213: 6719784021534445652
+    second: HealthBar UI_2
+  - first:
+      213: -7272891539166484886
+    second: HealthBar UI_3
+  - first:
+      213: 1520117634842948435
+    second: HealthBar UI_4
+  - first:
+      213: -386074587990435112
+    second: HealthBar UI_5
+  - first:
+      213: 231492050080503006
+    second: HealthBar UI_6
+  - first:
+      213: 454501942681255385
+    second: HealthBar UI_7
+  - first:
+      213: -6981298642756130873
+    second: HealthBar UI_8
+  - first:
+      213: 8983457782265571691
+    second: HealthBar UI_9
+  - first:
+      213: 4155813090837051049
+    second: HealthBar UI_10
+  - first:
+      213: 3680213946749969206
+    second: HealthBar UI_11
+  - first:
+      213: 1155120847928577582
+    second: HealthBar UI_12
+  - first:
+      213: 5431212635075883826
+    second: HealthBar UI_13
+  - first:
+      213: -4212753066283212075
+    second: HealthBar UI_14
+  - first:
+      213: 4879693063976238314
+    second: HealthBar UI_15
+  - first:
+      213: 8081382208410255017
+    second: HealthBar UI_16
+  - first:
+      213: 3883548528420120916
+    second: HealthBar UI_17
+  - first:
+      213: -8332016124096982573
+    second: HealthBar UI_18
+  - first:
+      213: 7745156819418918992
+    second: HealthBar UI_19
+  - first:
+      213: -4159035097469812828
+    second: HealthBar UI_20
+  - first:
+      213: 8057306527266416918
+    second: HealthBar UI_21
+  - first:
+      213: 614283957447650286
+    second: HealthBar UI_22
+  - first:
+      213: 1432883408798981435
+    second: HealthBar UI_23
+  - first:
+      213: -3662609150099260922
+    second: HealthBar UI_24
+  - first:
+      213: -8818280273449680413
+    second: HealthBar UI_25
+  - first:
+      213: 4297054311972403192
+    second: HealthBar UI_26
+  - first:
+      213: 1717385168095812818
+    second: HealthBar UI_27
+  - first:
+      213: 4840421697635257536
+    second: HealthBar UI_28
+  - first:
+      213: -8820357547179176956
+    second: HealthBar UI_29
+  - first:
+      213: 4262698434206622495
+    second: HealthBar UI_30
+  - first:
+      213: -80193055990417477
+    second: HealthBar UI_31
+  - first:
+      213: -3153859559329105412
+    second: HealthBar UI_32
+  - first:
+      213: 2971497260508461299
+    second: HealthBar UI_33
+  - first:
+      213: -41463921705739818
+    second: HealthBar UI_34
+  - first:
+      213: -8053586960958785581
+    second: HealthBar UI_35
+  - first:
+      213: 1736408399811854992
+    second: HealthBar UI_36
+  - first:
+      213: 3688090178058173816
+    second: HealthBar UI_37
+  - first:
+      213: 8333654497491824669
+    second: HealthBar UI_38
+  - first:
+      213: 5845200792696953959
+    second: HealthBar UI_39
+  - first:
+      213: 7997288854305771398
+    second: HealthBar UI_40
+  - first:
+      213: -5790901922145472372
+    second: HealthBar UI_41
+  - first:
+      213: -3940217538039909946
+    second: HealthBar UI_42
+  - first:
+      213: 9218622093256786009
+    second: HealthBar UI_43
+  - first:
+      213: 8090000961839622878
+    second: HealthBar UI_44
+  - first:
+      213: -761071107927924074
+    second: HealthBar UI_45
+  - first:
+      213: 1788552560476002272
+    second: HealthBar UI_46
+  - first:
+      213: 9102447517031930102
+    second: HealthBar UI_47
+  - first:
+      213: 316267517277321897
+    second: HealthBar UI_48
+  - first:
+      213: -3921338810002902788
+    second: HealthBar UI_49
+  - first:
+      213: 6797547691000589476
+    second: HealthBar UI_50
+  - first:
+      213: 7676470492030004031
+    second: HealthBar UI_51
+  - first:
+      213: 2167221297968094759
+    second: HealthBar UI_52
+  - first:
+      213: 731406161245215455
+    second: HealthBar UI_53
+  - first:
+      213: 1260741974072580434
+    second: HealthBar UI_54
+  - first:
+      213: 960761309207831925
+    second: HealthBar UI_55
+  - first:
+      213: 1393506550629603138
+    second: HealthBar UI_56
+  - first:
+      213: -7335347498711115694
+    second: HealthBar UI_57
+  - first:
+      213: -4384827597220675327
+    second: HealthBar UI_58
+  - first:
+      213: 7528057423542588537
+    second: HealthBar UI_59
+  - first:
+      213: 7762803089659705037
+    second: HealthBar UI_60
+  - first:
+      213: 8594967834315066851
+    second: HealthBar UI_61
+  - first:
+      213: -8032733226684402163
+    second: HealthBar UI_62
+  - first:
+      213: 5687391269566371994
+    second: HealthBar UI_63
+  - first:
+      213: 7991374758495019984
+    second: HealthBar UI_64
+  - first:
+      213: -1133809006294867677
+    second: HealthBar UI_65
+  - first:
+      213: 595763211780499969
+    second: HealthBar UI_66
+  - first:
+      213: -7329399127965595241
+    second: HealthBar UI_67
+  - first:
+      213: 6189694414240219072
+    second: HealthBar UI_68
+  - first:
+      213: 6692982305153035869
+    second: HealthBar UI_69
+  - first:
+      213: -2612728749913496403
+    second: HealthBar UI_70
+  - first:
+      213: 711846677097362983
+    second: HealthBar UI_71
+  - first:
+      213: 5713364890677024447
+    second: HealthBar UI_72
+  - first:
+      213: 8041837654477007247
+    second: HealthBar UI_73
+  - first:
+      213: 632433334875411146
+    second: HealthBar UI_74
+  - first:
+      213: -4769022782705051623
+    second: HealthBar UI_75
+  - first:
+      213: 8549622361208678314
+    second: HealthBar UI_76
+  - first:
+      213: -5542377803980784162
+    second: HealthBar UI_77
+  - first:
+      213: -2889253790227612957
+    second: HealthBar UI_78
+  - first:
+      213: -7094028715915323874
+    second: HealthBar UI_79
+  - first:
+      213: -507916550024777764
+    second: HealthBar UI_80
+  - first:
+      213: -8063071487356475427
+    second: HealthBar UI_81
+  - first:
+      213: -1289583354269225856
+    second: HealthBar UI_82
+  - first:
+      213: -1636190854966146802
+    second: HealthBar UI_83
+  - first:
+      213: 4368832794692728376
+    second: HealthBar UI_84
+  - first:
+      213: 8910357364976948768
+    second: HealthBar UI_85
+  - first:
+      213: -3460509813403317494
+    second: HealthBar UI_86
+  - first:
+      213: -1760451512498610480
+    second: HealthBar UI_87
+  - first:
+      213: -4702050685773887403
+    second: HealthBar UI_88
+  - first:
+      213: -6618638813469201442
+    second: HealthBar UI_89
+  - first:
+      213: -4574533090497161905
+    second: HealthBar UI_90
+  - first:
+      213: 7132777552293281596
+    second: HealthBar UI_91
+  - first:
+      213: 6853798429108990795
+    second: HealthBar UI_92
+  - first:
+      213: -5565872847863344615
+    second: HealthBar UI_93
+  - first:
+      213: 5622166038905228063
+    second: HealthBar UI_94
+  - first:
+      213: 800229015350985923
+    second: HealthBar UI_95
+  - first:
+      213: 8587103877906721381
+    second: HealthBar UI_96
+  - first:
+      213: 3417625308606571098
+    second: HealthBar UI_97
+  - first:
+      213: 3786920389598246338
+    second: HealthBar UI_98
+  - first:
+      213: -224061923228359792
+    second: HealthBar UI_99
+  - first:
+      213: 6856170380729637537
+    second: HealthBar UI_100
+  - first:
+      213: -3151524829345720385
+    second: HealthBar UI_101
+  - first:
+      213: -8024786155529939301
+    second: HealthBar UI_102
+  - first:
+      213: 2223202405488582216
+    second: HealthBar UI_103
+  - first:
+      213: 5523968258457199634
+    second: HealthBar UI_104
+  - first:
+      213: 1877327161166497578
+    second: HealthBar UI_105
+  - first:
+      213: 6190931578553118902
+    second: HealthBar UI_106
+  - first:
+      213: -9116348608830408059
+    second: HealthBar UI_107
+  - first:
+      213: 781358363770534011
+    second: HealthBar UI_108
+  - first:
+      213: 8802974385382073275
+    second: HealthBar UI_109
+  - first:
+      213: -4100226877709057468
+    second: HealthBar UI_110
+  - first:
+      213: 9086060157857219200
+    second: HealthBar UI_111
+  - first:
+      213: 6334464373545685636
+    second: HealthBar UI_112
+  - first:
+      213: 5241628966560161208
+    second: HealthBar UI_113
+  - first:
+      213: -3849504832264421155
+    second: HealthBar UI_114
+  - first:
+      213: -7007113308595562831
+    second: HealthBar UI_115
+  - first:
+      213: -943014764650280095
+    second: HealthBar UI_116
+  - first:
+      213: 3625807129647329256
+    second: HealthBar UI_117
+  - first:
+      213: -2532576333218164733
+    second: HealthBar UI_118
+  - first:
+      213: 4762030562689215627
+    second: HealthBar UI_119
+  - first:
+      213: -1644133225913820972
+    second: HealthBar UI_120
+  - first:
+      213: 8836954484593516912
+    second: HealthBar UI_121
+  - first:
+      213: 8543535980110117571
+    second: HealthBar UI_122
+  - first:
+      213: 3956299536986504761
+    second: HealthBar UI_123
+  - first:
+      213: 3781360937502571997
+    second: HealthBar UI_124
+  - first:
+      213: -4508961477827132966
+    second: HealthBar UI_125
+  - first:
+      213: -6275330896161869420
+    second: HealthBar UI_126
+  - first:
+      213: -988488428674321173
+    second: HealthBar UI_127
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealthBar UI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b5793c16371ea80800000000000000
+      internalID: -8439337362985100520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 226
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337e81dc854b069c0800000000000000
+      internalID: -3935947780830730445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 226
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45018e2f6f7714d50800000000000000
+      internalID: 6719784021534445652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 226
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66a906bdaf711b90800000000000000
+      internalID: -7272891539166484886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 226
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353fe995fea881510800000000000000
+      internalID: 1520117634842948435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 226
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da560e253364aaf0800000000000000
+      internalID: -386074587990435112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 211
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed410650bcc663300800000000000000
+      internalID: 231492050080503006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 211
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddbd3bdb17be4600800000000000000
+      internalID: 454501942681255385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 211
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7aa977fd17d1f90800000000000000
+      internalID: -6981298642756130873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 211
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6968aea147abac70800000000000000
+      internalID: 8983457782265571691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 211
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6b248dcf96ca930800000000000000
+      internalID: 4155813090837051049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 195
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6336871061fb21330800000000000000
+      internalID: 3680213946749969206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 195
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e4e658a40d70010800000000000000
+      internalID: 1155120847928577582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 195
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233bf45ad1b8f5b40800000000000000
+      internalID: 5431212635075883826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_14
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 195
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d260c5086b4985c0800000000000000
+      internalID: -4212753066283212075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_15
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 195
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecbd3becf628b340800000000000000
+      internalID: 4879693063976238314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 179
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae74723d46d62070800000000000000
+      internalID: 8081382208410255017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 179
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459e8788fc225e530800000000000000
+      internalID: 3883548528420120916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 179
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d15f54ea7bbe5c80800000000000000
+      internalID: -8332016124096982573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_19
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 179
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050b82777135c7b60800000000000000
+      internalID: 7745156819418918992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 179
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4affde64d932846c0800000000000000
+      internalID: -4159035097469812828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 163
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619a62cd89d41df60800000000000000
+      internalID: 8057306527266416918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 163
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb63e23100668800800000000000000
+      internalID: 614283957447650286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_23
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 163
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d930a5edf92e310800000000000000
+      internalID: 1432883408798981435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_24
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 163
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60afc31226ccb2dc0800000000000000
+      internalID: -3662609150099260922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_25
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 163
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1823300dc2f9580800000000000000
+      internalID: -8818280273449680413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 147
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7fca5412432ab30800000000000000
+      internalID: 4297054311972403192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 147
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc10e616b065d710800000000000000
+      internalID: 1717385168095812818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 147
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc84aa63e1ac2340800000000000000
+      internalID: 4840421697635257536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_29
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 147
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c03780b8bc79580800000000000000
+      internalID: -8820357547179176956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_30
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 147
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13ef7324a5282b30800000000000000
+      internalID: 4262698434206622495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 131
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7fc3827d813eef0800000000000000
+      internalID: -80193055990417477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 131
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9f7bec07d3b34d0800000000000000
+      internalID: -3153859559329105412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 131
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f837a7c301ec3920800000000000000
+      internalID: 2971497260508461299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_34
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 131
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d91cbb68c0bc6ff0800000000000000
+      internalID: -41463921705739818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 131
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d775582459eb3090800000000000000
+      internalID: -8053586960958785581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0924acf5d36f81810800000000000000
+      internalID: 1736408399811854992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_37
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 115
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db3c20a7abe2330800000000000000
+      internalID: 3688090178058173816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_38
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1036d3ac9617a370800000000000000
+      internalID: 8333654497491824669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_39
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c9889d6235e1150800000000000000
+      internalID: 5845200792696953959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_40
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 115
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f061f67d31cfe60800000000000000
+      internalID: 7997288854305771398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_41
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c807461226592afa0800000000000000
+      internalID: -5790901922145472372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_42
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 115
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1fd5b76098159c0800000000000000
+      internalID: -3940217538039909946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_43
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 115
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950832393ff1fef70800000000000000
+      internalID: 9218622093256786009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_44
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 115
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edae40b1305754070800000000000000
+      internalID: 8090000961839622878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_45
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 115
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692a4231cd12075f0800000000000000
+      internalID: -761071107927924074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_46
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 115
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7994dd31732d810800000000000000
+      internalID: 1788552560476002272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_47
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 115
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f813573ac3625e70800000000000000
+      internalID: 9102447517031930102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_48
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa3f4d91ab936400800000000000000
+      internalID: 316267517277321897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_49
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0f2d1e02b9499c0800000000000000
+      internalID: -3921338810002902788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_50
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acedd92c9db55e50800000000000000
+      internalID: 6797547691000589476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_51
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b6736ad3d488a60800000000000000
+      internalID: 7676470492030004031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_52
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e9c0fb944831e10800000000000000
+      internalID: 2167221297968094759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_53
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 100
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda9d8b470a762a00800000000000000
+      internalID: 731406161245215455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_54
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 100
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259550e452e0f7110800000000000000
+      internalID: 1260741974072580434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_55
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 100
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575a545025f455d00800000000000000
+      internalID: 960761309207831925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_56
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 100
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247157e13dab65310800000000000000
+      internalID: 1393506550629603138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_57
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 100
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2581643705c933a90800000000000000
+      internalID: -7335347498711115694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_58
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 100
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101055a3886f523c0800000000000000
+      internalID: -4384827597220675327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_59
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 83
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9749ff26758097860800000000000000
+      internalID: 7528057423542588537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_60
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 83
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6b87ce7440bbb60800000000000000
+      internalID: 7762803089659705037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_61
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 83
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed024c05b5774770800000000000000
+      internalID: 8594967834315066851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_62
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 83
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06bff780bff58090800000000000000
+      internalID: -8032733226684402163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_63
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 83
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9859210a3cadee40800000000000000
+      internalID: 5687391269566371994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_64
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 83
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d36e13b00117ee60800000000000000
+      internalID: 7991374758495019984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_65
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 83
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321e7a847b6e340f0800000000000000
+      internalID: -1133809006294867677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_66
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 83
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a2c601c73944800800000000000000
+      internalID: 595763211780499969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_67
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 83
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7998d80735eb84a90800000000000000
+      internalID: -7329399127965595241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_68
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 83
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cff10d764636e550800000000000000
+      internalID: 6189694414240219072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_69
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 83
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e2f9212ff32ec50800000000000000
+      internalID: 6692982305153035869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_70
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 83
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4a4f67b09bdbbd0800000000000000
+      internalID: -2612728749913496403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_71
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7263ee208ccf0e900800000000000000
+      internalID: 711846677097362983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_72
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb61efce813f94f40800000000000000
+      internalID: 5713364890677024447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_73
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8966704db85a9f60800000000000000
+      internalID: 8041837654477007247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_74
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac25d5d64cad6c800800000000000000
+      internalID: 632433334875411146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_75
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918de17eb0701ddb0800000000000000
+      internalID: -4769022782705051623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_76
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7649b5d3c56a670800000000000000
+      internalID: 8549622361208678314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_77
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 68
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd37b680c48513b0800000000000000
+      internalID: -5542377803980784162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_78
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea38875cfe47e7d0800000000000000
+      internalID: -2889253790227612957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_79
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 68
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e165279f772fc8d90800000000000000
+      internalID: -7094028715915323874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_80
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 68
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf2b3cb69483f8f0800000000000000
+      internalID: -507916550024777764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_81
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 68
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd76985c3373a1090800000000000000
+      internalID: -8063071487356475427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_82
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ca68495ca7a1ee0800000000000000
+      internalID: -1289583354269225856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_83
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 51
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09000916151b49e0800000000000000
+      internalID: -1636190854966146802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_84
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836bcba974631ac30800000000000000
+      internalID: 4368832794692728376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_85
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0269c3970d2f7ab70800000000000000
+      internalID: 8910357364976948768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_86
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 51
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b8756c8acc9ffc0800000000000000
+      internalID: -3460509813403317494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_87
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de98393dae9197e0800000000000000
+      internalID: -1760451512498610480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_88
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 51
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558c09650d5febeb0800000000000000
+      internalID: -4702050685773887403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_89
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 51
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb2e82f01fd524a0800000000000000
+      internalID: -6618638813469201442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_90
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 51
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4595af146ef380c0800000000000000
+      internalID: -4574533090497161905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_91
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 51
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f325a8467bcf260800000000000000
+      internalID: 7132777552293281596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 51
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43fb29bb559d1f50800000000000000
+      internalID: 6853798429108990795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_93
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 51
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9121d16522c02c2b0800000000000000
+      internalID: -5565872847863344615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_94
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b06319932f50e40800000000000000
+      internalID: 5622166038905228063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_95
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4c4f6bc0cfa1b00800000000000000
+      internalID: 800229015350985923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_96
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a62040b758b2770800000000000000
+      internalID: 8587103877906721381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_97
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5221ee5c18dd6f20800000000000000
+      internalID: 3417625308606571098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_98
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5ffa6c708dd8430800000000000000
+      internalID: 3786920389598246338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_99
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09368423ed8f3ecf0800000000000000
+      internalID: -224061923228359792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_100
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 36
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aad1feb2a2062f50800000000000000
+      internalID: 6856170380729637537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_101
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 36
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7560e7dd88344d0800000000000000
+      internalID: -3151524829345720385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_102
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 36
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b965a29328b32a090800000000000000
+      internalID: -8024786155529939301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_103
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 36
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ed0fa0fc66ade10800000000000000
+      internalID: 2223202405488582216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_104
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 36
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214efd32dd319ac40800000000000000
+      internalID: 5523968258457199634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_105
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 19
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2785884b1b9d0a10800000000000000
+      internalID: 1877327161166497578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_106
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b03860487b9ae550800000000000000
+      internalID: 6190931578553118902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_107
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a7902ad393c7180800000000000000
+      internalID: -9116348608830408059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_108
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 19
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78b2d2ca41f7da00800000000000000
+      internalID: 781358363770534011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_109
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3af8730927a2a70800000000000000
+      internalID: 8802974385382073275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_110
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 19
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44284afe0611917c0800000000000000
+      internalID: -4100226877709057468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_111
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 19
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082c8e4d29b281e70800000000000000
+      internalID: 9086060157857219200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_112
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 19
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482de8b49c988e750800000000000000
+      internalID: 6334464373545685636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_113
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 19
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd573416c10eb840800000000000000
+      internalID: 5241628966560161208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_114
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 19
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0cab720cfc39ac0800000000000000
+      internalID: -3849504832264421155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_115
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 19
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6df34329bb1ce90800000000000000
+      internalID: -7007113308595562831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_116
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 19
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b421f511db9e2f0800000000000000
+      internalID: -943014764650280095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_117
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef25b2cf54715230800000000000000
+      internalID: 3625807129647329256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_118
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30058fb3e3b7adcd0800000000000000
+      internalID: -2532576333218164733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_119
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ce4a20191261240800000000000000
+      internalID: 4762030562689215627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_120
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d85df1ca8dde29e0800000000000000
+      internalID: -1644133225913820972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_121
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071ed76984b23aa70800000000000000
+      internalID: 8836954484593516912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_122
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca7b3455bcb09670800000000000000
+      internalID: 8543535980110117571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_123
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 4
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e7f1fa77997e630800000000000000
+      internalID: 3956299536986504761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_124
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 4
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddf067fcb71a7430800000000000000
+      internalID: 3781360937502571997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_125
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 4
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad18138ec63fc61c0800000000000000
+      internalID: -4508961477827132966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_126
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491fc3e4ccb89e8a0800000000000000
+      internalID: -6275330896161869420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar UI_127
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be47848e20f2842f0800000000000000
+      internalID: -988488428674321173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HealthBar UI_0: -8439337362985100520
+      HealthBar UI_1: -3935947780830730445
+      HealthBar UI_10: 4155813090837051049
+      HealthBar UI_100: 6856170380729637537
+      HealthBar UI_101: -3151524829345720385
+      HealthBar UI_102: -8024786155529939301
+      HealthBar UI_103: 2223202405488582216
+      HealthBar UI_104: 5523968258457199634
+      HealthBar UI_105: 1877327161166497578
+      HealthBar UI_106: 6190931578553118902
+      HealthBar UI_107: -9116348608830408059
+      HealthBar UI_108: 781358363770534011
+      HealthBar UI_109: 8802974385382073275
+      HealthBar UI_11: 3680213946749969206
+      HealthBar UI_110: -4100226877709057468
+      HealthBar UI_111: 9086060157857219200
+      HealthBar UI_112: 6334464373545685636
+      HealthBar UI_113: 5241628966560161208
+      HealthBar UI_114: -3849504832264421155
+      HealthBar UI_115: -7007113308595562831
+      HealthBar UI_116: -943014764650280095
+      HealthBar UI_117: 3625807129647329256
+      HealthBar UI_118: -2532576333218164733
+      HealthBar UI_119: 4762030562689215627
+      HealthBar UI_12: 1155120847928577582
+      HealthBar UI_120: -1644133225913820972
+      HealthBar UI_121: 8836954484593516912
+      HealthBar UI_122: 8543535980110117571
+      HealthBar UI_123: 3956299536986504761
+      HealthBar UI_124: 3781360937502571997
+      HealthBar UI_125: -4508961477827132966
+      HealthBar UI_126: -6275330896161869420
+      HealthBar UI_127: -988488428674321173
+      HealthBar UI_13: 5431212635075883826
+      HealthBar UI_14: -4212753066283212075
+      HealthBar UI_15: 4879693063976238314
+      HealthBar UI_16: 8081382208410255017
+      HealthBar UI_17: 3883548528420120916
+      HealthBar UI_18: -8332016124096982573
+      HealthBar UI_19: 7745156819418918992
+      HealthBar UI_2: 6719784021534445652
+      HealthBar UI_20: -4159035097469812828
+      HealthBar UI_21: 8057306527266416918
+      HealthBar UI_22: 614283957447650286
+      HealthBar UI_23: 1432883408798981435
+      HealthBar UI_24: -3662609150099260922
+      HealthBar UI_25: -8818280273449680413
+      HealthBar UI_26: 4297054311972403192
+      HealthBar UI_27: 1717385168095812818
+      HealthBar UI_28: 4840421697635257536
+      HealthBar UI_29: -8820357547179176956
+      HealthBar UI_3: -7272891539166484886
+      HealthBar UI_30: 4262698434206622495
+      HealthBar UI_31: -80193055990417477
+      HealthBar UI_32: -3153859559329105412
+      HealthBar UI_33: 2971497260508461299
+      HealthBar UI_34: -41463921705739818
+      HealthBar UI_35: -8053586960958785581
+      HealthBar UI_36: 1736408399811854992
+      HealthBar UI_37: 3688090178058173816
+      HealthBar UI_38: 8333654497491824669
+      HealthBar UI_39: 5845200792696953959
+      HealthBar UI_4: 1520117634842948435
+      HealthBar UI_40: 7997288854305771398
+      HealthBar UI_41: -5790901922145472372
+      HealthBar UI_42: -3940217538039909946
+      HealthBar UI_43: 9218622093256786009
+      HealthBar UI_44: 8090000961839622878
+      HealthBar UI_45: -761071107927924074
+      HealthBar UI_46: 1788552560476002272
+      HealthBar UI_47: 9102447517031930102
+      HealthBar UI_48: 316267517277321897
+      HealthBar UI_49: -3921338810002902788
+      HealthBar UI_5: -386074587990435112
+      HealthBar UI_50: 6797547691000589476
+      HealthBar UI_51: 7676470492030004031
+      HealthBar UI_52: 2167221297968094759
+      HealthBar UI_53: 731406161245215455
+      HealthBar UI_54: 1260741974072580434
+      HealthBar UI_55: 960761309207831925
+      HealthBar UI_56: 1393506550629603138
+      HealthBar UI_57: -7335347498711115694
+      HealthBar UI_58: -4384827597220675327
+      HealthBar UI_59: 7528057423542588537
+      HealthBar UI_6: 231492050080503006
+      HealthBar UI_60: 7762803089659705037
+      HealthBar UI_61: 8594967834315066851
+      HealthBar UI_62: -8032733226684402163
+      HealthBar UI_63: 5687391269566371994
+      HealthBar UI_64: 7991374758495019984
+      HealthBar UI_65: -1133809006294867677
+      HealthBar UI_66: 595763211780499969
+      HealthBar UI_67: -7329399127965595241
+      HealthBar UI_68: 6189694414240219072
+      HealthBar UI_69: 6692982305153035869
+      HealthBar UI_7: 454501942681255385
+      HealthBar UI_70: -2612728749913496403
+      HealthBar UI_71: 711846677097362983
+      HealthBar UI_72: 5713364890677024447
+      HealthBar UI_73: 8041837654477007247
+      HealthBar UI_74: 632433334875411146
+      HealthBar UI_75: -4769022782705051623
+      HealthBar UI_76: 8549622361208678314
+      HealthBar UI_77: -5542377803980784162
+      HealthBar UI_78: -2889253790227612957
+      HealthBar UI_79: -7094028715915323874
+      HealthBar UI_8: -6981298642756130873
+      HealthBar UI_80: -507916550024777764
+      HealthBar UI_81: -8063071487356475427
+      HealthBar UI_82: -1289583354269225856
+      HealthBar UI_83: -1636190854966146802
+      HealthBar UI_84: 4368832794692728376
+      HealthBar UI_85: 8910357364976948768
+      HealthBar UI_86: -3460509813403317494
+      HealthBar UI_87: -1760451512498610480
+      HealthBar UI_88: -4702050685773887403
+      HealthBar UI_89: -6618638813469201442
+      HealthBar UI_9: 8983457782265571691
+      HealthBar UI_90: -4574533090497161905
+      HealthBar UI_91: 7132777552293281596
+      HealthBar UI_92: 6853798429108990795
+      HealthBar UI_93: -5565872847863344615
+      HealthBar UI_94: 5622166038905228063
+      HealthBar UI_95: 800229015350985923
+      HealthBar UI_96: 8587103877906721381
+      HealthBar UI_97: 3417625308606571098
+      HealthBar UI_98: 3786920389598246338
+      HealthBar UI_99: -224061923228359792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 2463c3bf9c614c94891f6e6393ccd7dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1977154692109835798
+    second: DeathCaveExplorer-Sheet_0
+  - first:
+      213: -8522905747588064404
+    second: DeathCaveExplorer-Sheet_1
+  - first:
+      213: 3351191956301261101
+    second: DeathCaveExplorer-Sheet_2
+  - first:
+      213: -3200556516114995198
+    second: DeathCaveExplorer-Sheet_3
+  - first:
+      213: 9195697736729199418
+    second: DeathCaveExplorer-Sheet_4
+  - first:
+      213: 8310268087888266305
+    second: DeathCaveExplorer-Sheet_5
+  - first:
+      213: 6716823284954368499
+    second: DeathCaveExplorer-Sheet_6
+  - first:
+      213: 782160520315245042
+    second: DeathCaveExplorer-Sheet_7
+  - first:
+      213: 6097356569443967854
+    second: DeathCaveExplorer-Sheet_8
+  - first:
+      213: -3084224470729982404
+    second: DeathCaveExplorer-Sheet_9
+  - first:
+      213: -4466742203255477648
+    second: DeathCaveExplorer-Sheet_10
+  - first:
+      213: 4659202311317339701
+    second: DeathCaveExplorer-Sheet_11
+  - first:
+      213: 7528500206992136349
+    second: DeathCaveExplorer-Sheet_12
+  - first:
+      213: -6894823453108636517
+    second: DeathCaveExplorer-Sheet_13
+  - first:
+      213: -4145662498326971917
+    second: DeathCaveExplorer-Sheet_14
+  - first:
+      213: -412697321626928441
+    second: DeathCaveExplorer-Sheet_15
+  - first:
+      213: 6880425403233119838
+    second: DeathCaveExplorer-Sheet_16
+  - first:
+      213: -3285877134788438417
+    second: DeathCaveExplorer-Sheet_17
+  - first:
+      213: 5797871050085579028
+    second: DeathCaveExplorer-Sheet_18
+  - first:
+      213: -3976712468821941904
+    second: DeathCaveExplorer-Sheet_19
+  - first:
+      213: 5068194041010221608
+    second: DeathCaveExplorer-Sheet_20
+  - first:
+      213: -8876891375218032169
+    second: DeathCaveExplorer-Sheet_21
+  - first:
+      213: 5016136977886163621
+    second: DeathCaveExplorer-Sheet_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e143197b3407b10800000000000000
+      internalID: 1977154692109835798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bd0ecf06e88b980800000000000000
+      internalID: -8522905747588064404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29ab713453d18e20800000000000000
+      internalID: 3351191956301261101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208676d4ec65593d0800000000000000
+      internalID: -3200556516114995198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a338b93ee5ead9f70800000000000000
+      internalID: 9195697736729199418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14448d6dbc0045370800000000000000
+      internalID: 8310268087888266305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f907ceb033f63d50800000000000000
+      internalID: 6716823284954368499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f199b269dacada00800000000000000
+      internalID: 782160520315245042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e632a96ae792e9450800000000000000
+      internalID: 6097356569443967854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e729e4f22a235d0800000000000000
+      internalID: -3084224470729982404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ebfbe01dfc8a040800000000000000
+      internalID: 4659202311317339701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d989831fc0b9a7860800000000000000
+      internalID: 7528500206992136349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b947d68899aa050a0800000000000000
+      internalID: -6894823453108636517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathCaveExplorer-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114705e7516b1b443a7813d1929794df
+      internalID: -693692378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4822fcbaf76c8ff4e84c867c4865df42
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":30.0,"y":32.0},"gridSpriteOffset":{"x":4.0,"y":0.0},"gridSpritePadding":{"x":15.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DeathCaveExplorer-Sheet_0: 1977154692109835798
+      DeathCaveExplorer-Sheet_1: -8522905747588064404
+      DeathCaveExplorer-Sheet_10: -4466742203255477648
+      DeathCaveExplorer-Sheet_11: 4659202311317339701
+      DeathCaveExplorer-Sheet_12: 7528500206992136349
+      DeathCaveExplorer-Sheet_13: -6894823453108636517
+      DeathCaveExplorer-Sheet_14: -693692378
+      DeathCaveExplorer-Sheet_2: 3351191956301261101
+      DeathCaveExplorer-Sheet_3: -3200556516114995198
+      DeathCaveExplorer-Sheet_4: 9195697736729199418
+      DeathCaveExplorer-Sheet_5: 8310268087888266305
+      DeathCaveExplorer-Sheet_6: 6716823284954368499
+      DeathCaveExplorer-Sheet_7: 782160520315245042
+      DeathCaveExplorer-Sheet_8: 6097356569443967854
+      DeathCaveExplorer-Sheet_9: -3084224470729982404
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: e429b22e61a5a82488f781324e8276aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5135457864562871080
+    second: Olha Volkova Deep Cave Spritesheet (Resized)_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4075
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6c8c414136da44bb12b85ef7f65c4a
+      internalID: -5135457864562871080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_1
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 4075
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82da354e6296058459b3fdc8084f66fd
+      internalID: 158396416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_2
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 4075
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36e9c00d76ed4c4a92b6dfee6b88ea4
+      internalID: -1488944593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_3
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 4075
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ede43d1e1ea6df4ea4dc831e3d56252
+      internalID: -537007151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3260
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690dc562692ef0d4da929afb7eb08431
+      internalID: -1376569498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_5
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3260
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9956b3efd4b77444bb203d30a3022c28
+      internalID: -956065267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_6
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 3260
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f9020d942003045a47bb4a6664c16e
+      internalID: 1882074168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_7
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 3260
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a659de8ca6388ee41bef8a294adec83e
+      internalID: -1768679135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2445
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a03391abad45d64d8b2ed670f9894bd
+      internalID: -1091431200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_9
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2445
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b82f0eedc67d2d4999d252c6da0f0fb
+      internalID: 1607340832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_10
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 2445
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5653389fc9f9aed448376f93d974277d
+      internalID: 1802972260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_11
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 2445
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae576284bc63e9428482af88607ddbd
+      internalID: -1435925001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1630
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4d422dd7b727d479d563767b2a109a
+      internalID: 361147296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_13
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1630
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc99adebf54178439388cd1a6b44274
+      internalID: 506855762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_14
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 1630
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370d60239269dc2418aa448ce1ba4202
+      internalID: -740260827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_15
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 1630
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e1b105388180e4c99814149f96567e
+      internalID: -650453269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bee34932c3dcd24bbbae50ef2f762c8
+      internalID: -473422894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_17
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 815
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae05133e1152c34583f84131a9c4010
+      internalID: 577891769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_18
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 815
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8f0057233da63489dbc65e27b69825
+      internalID: -1599999115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_19
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 815
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661c4a56b3e6cfb4d85a31958e1b2ea0
+      internalID: -432230780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7017eba00804bc04aa8eb671394378d6
+      internalID: -1686197214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_21
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ec808e64b4a8c4a840af0ca328b9dc
+      internalID: -701956686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_22
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 0
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6a6386a021a6a4d8099b2e6e29b5c7
+      internalID: -1630405449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Olha Volkova Deep Cave Spritesheet (Resized)_23
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 0
+        width: 1450
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7182d2e49e3a3634ab004f1d9ca2a468
+      internalID: -155485271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 75672d95c174f6243bcad09dec7c0975
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1450.0,"y":815.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      Olha Volkova Deep Cave Spritesheet (Resized)_0: -5135457864562871080
+      Olha Volkova Deep Cave Spritesheet (Resized)_1: 158396416
+      Olha Volkova Deep Cave Spritesheet (Resized)_10: 1802972260
+      Olha Volkova Deep Cave Spritesheet (Resized)_11: -1435925001
+      Olha Volkova Deep Cave Spritesheet (Resized)_12: 361147296
+      Olha Volkova Deep Cave Spritesheet (Resized)_13: 506855762
+      Olha Volkova Deep Cave Spritesheet (Resized)_14: -740260827
+      Olha Volkova Deep Cave Spritesheet (Resized)_15: -650453269
+      Olha Volkova Deep Cave Spritesheet (Resized)_16: -473422894
+      Olha Volkova Deep Cave Spritesheet (Resized)_17: 577891769
+      Olha Volkova Deep Cave Spritesheet (Resized)_18: -1599999115
+      Olha Volkova Deep Cave Spritesheet (Resized)_19: -432230780
+      Olha Volkova Deep Cave Spritesheet (Resized)_2: -1488944593
+      Olha Volkova Deep Cave Spritesheet (Resized)_20: -1686197214
+      Olha Volkova Deep Cave Spritesheet (Resized)_21: -701956686
+      Olha Volkova Deep Cave Spritesheet (Resized)_22: -1630405449
+      Olha Volkova Deep Cave Spritesheet (Resized)_23: -155485271
+      Olha Volkova Deep Cave Spritesheet (Resized)_3: -537007151
+      Olha Volkova Deep Cave Spritesheet (Resized)_4: -1376569498
+      Olha Volkova Deep Cave Spritesheet (Resized)_5: -956065267
+      Olha Volkova Deep Cave Spritesheet (Resized)_6: 1882074168
+      Olha Volkova Deep Cave Spritesheet (Resized)_7: -1768679135
+      Olha Volkova Deep Cave Spritesheet (Resized)_8: -1091431200
+      Olha Volkova Deep Cave Spritesheet (Resized)_9: 1607340832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
