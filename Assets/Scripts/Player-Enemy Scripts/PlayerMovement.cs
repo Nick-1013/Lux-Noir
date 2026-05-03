@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,13 +30,17 @@ public class PlayerMovement : MonoBehaviour
     private bool isTouchingWall;
     private bool isWallSliding;
     private bool isWallJumping;
+    private bool wasWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingTime = 0.2f;
+    private readonly float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.4f;
+    private readonly float wallJumpingDuration = 0.4f;
 
     [Header("Wall Jump")]
-    public Vector2 wallJumpForce = new Vector2(8f, 12f);
+    public Vector2 wallJumpForce = new(8f, 12f);
+
+    [Header("Ability UI Controller")]
+    public ImageController wallJumpImageController;
 
     // ---------------- COLOR SWAP ----------------
     [Header("Color Swap")]
@@ -45,11 +50,21 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isAltColor = false;
 
+    [Header("Abilities")]
+    public bool hasWallJump = false;
+    public bool hasColorSwap = false;
+
+    [Header("Ability UI")]
+    public GameObject wallJumpUI;
+    public GameObject colorSwapUI;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         availableJumps = 1;
         gameManager = FindFirstObjectByType<GameManagerScript>();
+
+        UpdateAbilityUI(); // Initialize UI
     }
 
     void Update()
@@ -123,6 +138,27 @@ public class PlayerMovement : MonoBehaviour
         {
             ToggleColor();
         }
+
+        HandleWallJumpUIState();
+    }
+
+    void HandleWallJumpUIState()
+    {
+        if (wallJumpImageController == null) return;
+
+        // ON STATE CHANGE: ENTERING wall jump
+        if (!wasWallJumping && isWallJumping)
+        {
+            wallJumpImageController.SetInUse(true);
+        }
+
+        // ON STATE CHANGE: EXITING wall jump
+        if (wasWallJumping && !isWallJumping)
+        {
+            wallJumpImageController.SetInUse(false);
+        }
+
+        wasWallJumping = isWallJumping;
     }
 
     // =========================================================
@@ -159,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
             wallLayer
         );
 
-        Debug.DrawRay(transform.position, Vector2.right * transform.localScale.x * wallCheckDistance, Color.red);
+        Debug.DrawRay(transform.position, transform.localScale.x * wallCheckDistance * Vector2.right, Color.red);
     }
 
     void HandleWallSlide()
@@ -175,6 +211,8 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleWallJump(Gamepad currentGamepad)
     {
+        if (!hasWallJump) return; // <--- LOCK
+
         if (isWallSliding)
         {
             isWallJumping = false;
@@ -192,6 +230,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isWallJumping = true;
 
+            StartCoroutine(WallJumpUIFlash());
+
             rb.linearVelocity = new Vector2(
                 wallJumpingDirection * wallJumpForce.x,
                 wallJumpForce.y
@@ -199,10 +239,8 @@ public class PlayerMovement : MonoBehaviour
 
             wallJumpingCounter = 0f;
 
-            // EXTRA PUSH OFF WALL (anti-stick)
             rb.AddForce(new Vector2(wallJumpingDirection * 2f, 0f), ForceMode2D.Impulse);
 
-            // Flip player
             if (transform.localScale.x != wallJumpingDirection)
             {
                 Vector3 scale = transform.localScale;
@@ -214,9 +252,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    IEnumerator WallJumpUIFlash()
+    {
+        if (wallJumpImageController == null) yield break;
+
+        wallJumpImageController.SetInUse(true);
+        yield return new WaitForSeconds(0.15f);
+        wallJumpImageController.SetInUse(false);
+    }
+
     void StopWallJumping()
     {
         isWallJumping = false;
+    }
+
+    IEnumerator ResetInUseDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        wallJumpImageController.SetInUse(false);
     }
 
     // =========================================================
@@ -224,6 +277,8 @@ public class PlayerMovement : MonoBehaviour
     // =========================================================
     void ToggleColor()
     {
+        if (!hasColorSwap) return; // <--- LOCK
+
         isAltColor = !isAltColor;
 
         if (spriteRenderer != null)
@@ -298,5 +353,27 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+    void UpdateAbilityUI()
+    {
+        if (wallJumpUI != null)
+            wallJumpUI.SetActive(hasWallJump);
+
+        if (colorSwapUI != null)
+            colorSwapUI.SetActive(hasColorSwap);
+    }
+    public void UnlockWallJump()
+    {
+        hasWallJump = true;
+        UpdateAbilityUI();
+
+        if (wallJumpImageController != null)
+            wallJumpImageController.SetUnlocked(true);
+    }
+
+    public void UnlockColorSwap()
+    {
+        hasColorSwap = true;
+        UpdateAbilityUI();
     }
 }

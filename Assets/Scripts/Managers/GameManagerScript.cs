@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -10,10 +9,6 @@ public class GameManagerScript : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject gameOverUI;
     public GameObject gameWinUI;
-    public GameObject hpBarUI;
-
-    [Header("Level Progress")]
-    public int enemiesRemaining;
 
     private bool isPaused;
 
@@ -29,14 +24,8 @@ public class GameManagerScript : MonoBehaviour
         gameOverUI.SetActive(false);
         gameWinUI.SetActive(false);
 
-        if (hpBarUI != null)
-            hpBarUI.SetActive(true);
-
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
-        // Count enemies in scene
-        enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
 
     void Update()
@@ -62,18 +51,6 @@ public class GameManagerScript : MonoBehaviour
 
         return keyboardPause || gamepadPause;
     }
-    public void EnemyKilled()
-    {
-        enemiesRemaining--;
-
-        if (enemiesRemaining <= 0)
-        {
-            if (isFinalLevel)
-                GameWin();
-            else
-                LoadNextLevel();
-        }
-    }
 
     public void LoadNextLevel()
     {
@@ -90,9 +67,6 @@ public class GameManagerScript : MonoBehaviour
 
         pauseMenuUI.SetActive(true);
 
-        if (hpBarUI != null)
-            hpBarUI.SetActive(false);
-
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -100,13 +74,6 @@ public class GameManagerScript : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenuUI.SetActive(false);
-
-        // Only show HP bar if NOT in game over or win state
-        if (!gameOverUI.activeSelf && !gameWinUI.activeSelf)
-        {
-            if (hpBarUI != null)
-                hpBarUI.SetActive(true);
-        }
 
         Time.timeScale = 1f;
         isPaused = false;
@@ -130,9 +97,6 @@ public class GameManagerScript : MonoBehaviour
 
     public void GameWin()
     {
-        if (hpBarUI != null)
-            hpBarUI.SetActive(false);
-
         gameWinUI.SetActive(true);
     }
 

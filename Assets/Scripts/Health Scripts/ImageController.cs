@@ -2,58 +2,63 @@ using UnityEngine;
 
 public class ImageController : MonoBehaviour
 {
-    // Order them in the inspector like this:
-    // 0 = Empty HP
-    // 1 = 1 HP
-    // 2 = 2 HP
-    // 3 = 3 HP
-    // 4 = 4 HP
+    [Header("UI States")]
+    public GameObject inactiveImage; // ability locked / not usable
+    public GameObject activeImage;   // ability unlocked
+    public GameObject inUseImage;    // OPTIONAL: when actively wall jumping
 
-    public GameObject[] imageObjects;
+    private bool isUnlocked = false;
+    private bool isInUse = false;
 
-    public int maxHealth = 4;
-    private int currentHealth;
-
+    // ---------------- INITIALIZE ----------------
     void Start()
     {
-        currentHealth = maxHealth;
-        UpdateImages();
+        UpdateUI();
     }
 
-    // Call when player takes damage
-    public void TakeDamage(int amount)
-    {
-        currentHealth -= amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+    // ---------------- PUBLIC API ----------------
 
-        UpdateImages();
+    // Call when ability is unlocked
+    public void SetUnlocked(bool value)
+    {
+        isUnlocked = value;
+        UpdateUI();
     }
 
-    // Call when player heals
-    public void Heal(int amount)
+    // Call when ability is actively being used (wall jump happening)
+    public void SetInUse(bool value)
     {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
-        UpdateImages();
+        isInUse = value;
+        UpdateUI();
     }
 
-    void UpdateImages()
+    // ---------------- UI LOGIC ----------------
+    void UpdateUI()
     {
-        // If the HP bar itself is disabled, do nothing
-        if (!gameObject.activeInHierarchy)
-            return;
+        // Disable everything first
+        if (inactiveImage != null) inactiveImage.SetActive(false);
+        if (activeImage != null) activeImage.SetActive(false);
+        if (inUseImage != null) inUseImage.SetActive(false);
 
-        // Disable all images first
-        for (int i = 0; i < imageObjects.Length; i++)
+        if (!isUnlocked)
         {
-            imageObjects[i].SetActive(false);
+            // Show locked state
+            if (inactiveImage != null)
+                inactiveImage.SetActive(true);
         }
-
-        // Enable only the image matching the current health
-        if (currentHealth >= 0 && currentHealth < imageObjects.Length)
+        else
         {
-            imageObjects[Mathf.Clamp(currentHealth, 0, imageObjects.Length - 1)].SetActive(true);
+            if (isInUse && inUseImage != null)
+            {
+                // Show "currently using ability"
+                inUseImage.SetActive(true);
+            }
+            else
+            {
+                // Show unlocked/ready state
+                if (activeImage != null)
+                    activeImage.SetActive(true);
+            }
         }
     }
 }
